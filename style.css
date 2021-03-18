@@ -5,7 +5,11 @@
     --orange: #fcbb17;
     --blue: #3d8999;
     --yellow: #e7de17;
-  }
+}
+
+* {
+    word-wrap: break-word;
+}
 
 .main {
     background-image: url("bg_image.jpg");
@@ -38,8 +42,9 @@
 .teal-box, .green-box, .orange-box, .blue-box, .purple-box, .yellow-box {
     width: 30px;
     height: 30px;
-    margin-left: -46px;
-    margin-right: 12px;
+    position: absolute;
+    top: 0px;
+    left: -45px;
 }
 
 .teal-box {
@@ -66,8 +71,34 @@
     background-color: var(--yellow);
 }
 
+.devices-specifications {
+    font-size: 20px;
+}
+
 @media (min-width: 1200px) {
     .container {
         max-width: 1400px;
+    }
+}
+
+@media (max-width: 576px) {
+    h5 {
+        font-size: 16px;
+    }
+
+    .main {
+        padding: 15px !important;
+    }
+
+    .main-heading {
+        font-size: 25px;
+    }
+
+    .program-description {
+        font-size: 18px;
+    }
+
+    .presenters {
+        justify-content: center;
     }
 }
