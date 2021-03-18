@@ -1,0 +1,73 @@
+:root {
+    --purple: #5a2e80;
+    --teal: #0286a7;
+    --green: #b2ca36;
+    --orange: #fcbb17;
+    --blue: #3d8999;
+    --yellow: #e7de17;
+  }
+
+.main {
+    background-image: url("bg_image.jpg");
+}
+
+.content {
+    background-color: #fff;
+}
+
+.border-purple {
+    border: 3px solid var(--purple) !important;
+}
+
+.border-teal {
+    border: 3px solid var(--teal) !important;
+}
+
+.livenow {
+    padding: 5px 10px;
+    background-color: var(--green);
+    border-radius: 10px;
+    height: 35px;
+}
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.teal-box, .green-box, .orange-box, .blue-box, .purple-box, .yellow-box {
+    width: 30px;
+    height: 30px;
+    margin-left: -46px;
+    margin-right: 12px;
+}
+
+.teal-box {
+    background-color: var(--teal);
+}
+
+.green-box {
+    background-color: var(--green);
+}
+
+.orange-box {
+    background-color: var(--orange);
+}
+
+.blue-box {
+    background-color: var(--blue);
+}
+
+.purple-box {
+    background-color: var(--purple);
+}
+
+.yellow-box {
+    background-color: var(--yellow);
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1400px;
+    }
+}
